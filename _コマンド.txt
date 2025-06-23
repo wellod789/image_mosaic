@@ -1,0 +1,56 @@
+# PDFページ置換ツール 実行手順
+
+# 仮想環境の作成
+python -m venv venv
+
+# 仮想環境の有効化（Windows）
+.\venv\Scripts\activate
+
+# pipのアップグレード
+python -m pip install --upgrade pip
+
+# 必要なライブラリのインストール
+pip install -r requirements.txt
+
+# プログラムの実行
+python mosaic_app.py
+
+# 仮想環境の無効化
+deactivate
+
+
+exe化したいです。ただしライブラリを除きます。
+
+batファイルから起動して、
+仮想環を作成、アクティブ化
+requirements.txtでライブラリインストール
+exeを起動にしたいです。
+
+
+# =============================
+# GitHub操作コマンド（よく使うもの）
+# =============================
+
+# 初回のみ（リポジトリ作成・初期化）
+git init
+git config --global user.name "Wellod"
+git config --global user.email "yoshida.hiroyuki@vellod-ec.com"
+
+git add .
+git commit -m "Initial commit: Image Mosaic Tool v1.2.0"
+
+git remote add origin https://github.com/wellod789/image_mosaic.git
+
+git push -u origin master
+
+# 2回目以降の更新
+# （ファイルを編集・追加・削除した後）
+git add .
+git commit -m "Update: 変更内容"
+git push
+
+# 除外ファイルを管理対象外にしたい場合
+git rm --cached _コマンド.txt
+git rm --cached _メタデータ追記.txt
+git commit -m "Remove: 除外ファイルを管理対象外に"
+git push
