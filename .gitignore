@@ -1,0 +1,17 @@
+# 除外したいもの
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.exe
+*.spec
+.idea/
+.vscode/
+_Completed/
+_Original/
+_bk/
+_bk2_x/
+_コマンド.txt
+_メタデータ追記.txt
